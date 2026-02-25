@@ -15,6 +15,7 @@ import Careers, { careersLoader } from './pages/careers/Careers';
 import CareerDetails, {
   careerDetailsLoader,
 } from './pages/careers/CareerDetails';
+import CareersError from './pages/careers/CareersError';
 
 // layouts
 import RootLayout from './layouts/RootLayout';
@@ -36,6 +37,7 @@ const router = createBrowserRouter(
           path=":id"
           element={<CareerDetails />}
           loader={careerDetailsLoader}
+          errorElement={<CareersError />}
         />
       </Route>
 
