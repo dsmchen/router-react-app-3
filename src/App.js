@@ -28,7 +28,7 @@ const router = createBrowserRouter(
         <Route path="contact" element={<Contact />} />
       </Route>
       <Route path="careers" element={<CareersLayout />}>
-        <Route index element={<Careers />} />
+        <Route index element={<Careers />} loader={careersLoader} />
       </Route>
 
       <Route path="*" element={<NotFound />} />
